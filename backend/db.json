@@ -1,0 +1,16 @@
+{
+  "food-list": [
+    {
+      "food": "arroz",
+      "id": 1
+    },
+    {
+      "food": "camarao",
+      "id": 2
+    },
+    {
+      "food": "teste",
+      "id": 3
+    }
+  ]
+}
