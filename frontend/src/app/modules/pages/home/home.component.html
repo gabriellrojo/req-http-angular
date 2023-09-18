@@ -1,0 +1,14 @@
+<div *ngFor="let item of foodList">
+  <div class="food-container" >
+    <p>{{item.food}}</p>
+    <button (click)="editar()">edit</button>
+    <button (click)="deleteFood(item.id)">delete</button>
+  </div>
+  <div [ngClass]="{'active': editarFood, 'unable': !editarFood}">
+    <input #Input>
+    <button (click)="editFood(Input.value, item.id)">editar</button>
+  </div>
+</div>
+<input type="text" #Input2>
+<app-button (click)="addFood(Input2.value)"></app-button>
+
